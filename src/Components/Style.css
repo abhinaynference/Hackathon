@@ -1,0 +1,254 @@
+/* Card Container */
+.masonry-grid {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 0.8fr)); /* Adjust minmax to control column width */
+    gap: 30px; /* Adjust gap between cards */
+}
+
+.card {
+    padding: 16px;
+    height: fit-content;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-image {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #666;
+}
+
+.card-price{
+    font-size:larger;
+    font-weight: 600;
+    color: #010101;
+}
+.card-add-to-cart {
+    margin: 20px 0 0 0;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card-add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.cart-drawer {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.cart-drawer.open {
+    right: 0;
+}
+
+.cart-drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+.cart-drawer-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.cart-drawer-content {
+    padding: 20px;
+}
+
+.cart-drawer-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cart-drawer-item-image {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.cart-drawer-item-details {
+    flex-grow: 1;
+}
+
+.cart-drawer-item-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.cart-drawer-item-details p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.cart-drawer-item-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-drawer-quantity {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.cart-drawer-remove {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.cart-drawer-remove:hover {
+    background-color: #c82333;
+}
+
+.cart-drawer-footer {
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.cart-drawer-summary {
+    margin-bottom: 20px;
+}
+
+.cart-drawer-summary-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.cart-drawer-summary-item label {
+    margin-left: 10px;
+}
+
+.cart-drawer-checkout {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.cart-drawer-checkout:hover {
+    background-color: #0056b3;
+}
+
+.cart-drawer-summary p,
+.cart-drawer-summary h3 {
+    margin: 5px 0;
+}
+
+.container {
+    -moz-column-count: 1;
+         column-count: 1;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    margin: 20px auto 0;
+    padding: 2rem;
+  }
+  .container .item {
+    background-color: white;
+    border-radius: 8px;
+   
+    display: inline-block;
+    margin: 0 0 20px;
+    page-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+         break-inside: avoid;
+    width: 100%;
+  }
+  .container .item img {
+    width: 250px;
+    object-fit: cover;
+    height: auto;
+  }
+  @media (min-width: 600px) {
+    .container {
+      -moz-column-count: 2;
+           column-count: 2;
+    }
+  }
+  @media (min-width: 900px) {
+    .container {
+      -moz-column-count: 3;
+           column-count: 3;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      -moz-column-count: 4;
+           column-count: 4;
+    }
+  }
+
+  .test{
+    background-color: whitesmoke;
+  }
+
+  .test2{
+    padding: 8px 8px;
+  }
